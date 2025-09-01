@@ -1,0 +1,55 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: auto 0;
+}
+header, footer {
+    background-color: rgb(16, 16, 90);
+    padding: 1%;
+    margin: 0px;
+    text-align: center;
+}
+
+body {
+    background-color: white;
+    padding: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    margin: 0px auto;
+    text-align: left;
+    max-width: 800px;
+    width: 90%;
+    background-color: midnightblue;
+    flex: 1;
+}
+main ul {
+    padding:20px;
+}
+h1, h2, h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold';
+    padding: 10px;
+    text-align: left;
+}
+
+footer {
+    height: 50px;
+}
+footer div {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+footer div a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 0px 10px;
+}
+footer div a:hover {
+    font-size: 110%;
+    color: gray
+}
