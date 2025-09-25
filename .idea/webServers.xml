@@ -3,9 +3,9 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="e7cf0c31-e911-4c31-9c21-60600278f166" name="UNCC Webspace">
-        <fileTransfer rootFolder="/public_html" accessType="SFTP" host="webpages.charlotte.edu" port="22" sshConfigId="f85185e5-f18b-4044-8311-4b43ea9696af" sshConfig="amclai10@webpages.charlotte.edu:22 password">
+        <fileTransfer rootFolder="" accessType="SFTP" host="webpages.charlotte.edu" port="22" sshConfigId="2128f74b-9a6b-457e-a16a-c56110478ee2" sshConfig="amclai10@webpages.charlotte.edu:22 password">
           <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
         </fileTransfer>
       </webServer>
