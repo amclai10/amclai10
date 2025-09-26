@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aidan McLain | Personal Home Page</title>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+
     <style>
         /* Reset/Base Styles */
         * {
@@ -19,17 +20,6 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-        }
-
-        /* Header Styles */
-        header {
-            color: #DAD6D6;
-            display: flex;
-            align-items: center;
-            background-color: #1C1D21;
-            padding: 1%;
-            margin: 0;
-            text-align: center;
         }
 
         /* Main Content */
@@ -75,39 +65,7 @@
             margin-right: 20px;
         }
         
-        /* Footer and Navigation */
-        footer {
-            background-color: #1C1D21;
-            color: #DAD6D6;
-            padding: 2rem;
-            text-align: center;
-        }
-        
-        footer nav {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
-            text-align: center;
-            flex-wrap: wrap;
-            width: 100%;
-        }
-        
-        nav a {
-            color: #DAD6D6;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
-            flex: 1;
-            text-align: center;
-            padding: 2rem 0;
-        }
-        footer {
-            color: #DAD6D6;
-        }
-        nav a:hover {
-            color: #686868;
-        }
+
     </style>
 </head>
 <body>
@@ -130,15 +88,12 @@
     </ul>
     </main>
     <footer>
-        <nav>
-            <a href="https://github.com/amclai10" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/aidan-mclain/" target="_blank">LinkedIn</a>
-            <a href="https://webpages.charlotte.edu/amclai10/" target="_blank">Charlotte Webpage Home</a>
-            <a href="https://webpages.charlotte.edu/amclai10/itis3135" target="_blank">Charlotte ITIS3135 Page</a>
-            <a href="https://amclai10.github.io/amclai10/" target="_blank">GitHub page</a>
-        </nav>
-        <p>Aidan McLain &copy;2025</p>
-        <p>Designed by <a href="/itis3135/aidanmc.com/">Aidan McLain LLC</a></p>
+        <div data-include="itis3135/components/footer.html"></div>
     </footer>
+    <script>
+        document.getElementById("validation_link_html"). setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document. getElementById("validation_link_css"). setAttribute ("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href) ;
+    </script>
+    <script src="itis3135/scripts/HTMLinclude.js"></script>
 </body>
 </html>

@@ -5,42 +5,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aidan McLain | ITIS-3135 Home</title>
-    <link rel="stylesheet" href="styles/styles.css">
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #1C1D21;
+            margin: auto 0;
+        }
+
+        body {
+            background-color: white;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            margin: 0 auto;
+            text-align: left;
+            max-width: 800px;
+            width: 90%;
+            background-color: #DAD6D6;
+            flex: 1;
+        }
+        main ul {
+            padding:20px;
+        }
+        h2, h1{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',serif;
+            padding: 10px;
+            text-align: left;
+        }
+        h3 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            padding: 10px;
+            text-align: left;
+            font-size: 95%;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            padding: 0 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Aidan McLain</h1>
-        <div class="page-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="introduction.html">Introduction</a></li>
-                <li><a href="contract.html">Contract</a></li>
-            </ul>
-        </div>
+        <div data-include="components/header.html"></div>
     </header>
     <main>
         <h2>ITIS-3135 Home Page</h2>
         <p>Hello, this is the home page for Aidan McLain's ITIS-3135 course. Here you can find links to my other page.</p>
     </main>
     <footer>
-        <div class="footer-links">
-            <a href="https://github.com/amclai10" target="_blank">GitHub</a>
-            <p>~</p>
-            <a href="https://www.linkedin.com/in/aidan-mclain/" target="_blank">LinkedIn</a>
-            <p>~</p>
-            <a href="https://webpages.charlotte.edu/amclai10/" target="_blank">Charlotte Webpage Home</a>
-            <p>~</p>
-            <a href="https://webpages.charlotte.edu/amclai10/itis3135" target="_blank">Charlotte ITIS3135 Page</a>
-            <p>~</p>
-            <a href="https://amclai10.github.io/amclai10/" target="_blank">GitHub page</a>
-            <p>~</p>
-            <a href="aidanmc.com/">Designed by Aidan McLain LLC</a>
-            <p>~</p>
-            <a href="ambitiousMonkey/">Ambitious Monkey</a>
-        </div>
-        <p>Aidan McLain &copy; 2024</p>
-
+        <div data-include="components/footer.html"></div>
     </footer>
+    <script>
+        document.getElementById("validation_link_html"). setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document. getElementById("validation_link_css"). setAttribute ("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href) ;
+    </script>
+    <script src="scripts/HTMLinclude.js"></script>
 </body>
 </html> 

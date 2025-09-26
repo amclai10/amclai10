@@ -1,0 +1,61 @@
+<style>
+    :root {
+        --headerTextColor: #DAD6D6;
+        --linkHoverColor: #686868;
+        --header-gap: 3rem;
+        --header-padding-y: 2rem;
+        --sep-nudge: 0.10em;
+    }
+
+    header {
+        color: var(--headerTextColor);
+        display: flex;
+        align-items: center;
+        background-color: #1C1D21;
+        padding: 1%;
+        margin: 0;
+        text-align: center;
+    }
+    header h1 {
+        color: var(--headerTextColor);
+        padding-right: 2em;
+    }
+    .header-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        gap: var(--header-gap);
+    }
+    .header-links li {
+        display: flex;
+        align-items: center;
+        line-height: 1;
+    }
+
+    .header-links a {
+        color: var(--headerTextColor);
+        text-decoration: none;
+        font-weight: 700;
+        transition: color 0.3s ease;
+        line-height: 1;
+        padding: 0.25rem 0;
+        text-align: center;
+    }
+    .header-links a:hover {
+        color: var(--linkHoverColor);
+    }
+</style>
+
+<header>
+    <h1>Aidan McLain</h1>
+    <div class="page-nav">
+        <ul class="header-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="introduction.html">Introduction</a></li>
+            <li><a href="contract.html">Contract</a></li>
+        </ul>
+    </div>
+</header>
