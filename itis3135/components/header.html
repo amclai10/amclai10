@@ -10,6 +10,7 @@
     header {
         color: var(--headerTextColor);
         display: flex;
+        flex-direction: column;
         align-items: center;
         background-color: #1C1D21;
         padding: 1%;
@@ -18,21 +19,24 @@
     }
     header h1 {
         color: var(--headerTextColor);
-        padding-right: 2em;
     }
     .header-links {
+        background-color: #2A2B30;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
         list-style: none;
-        padding: 0;
+        padding: 1em;
         gap: var(--header-gap);
+        width: 100%;
+        border-radius: 10px;
     }
     .header-links li {
         display: flex;
         align-items: center;
         line-height: 1;
+
     }
 
     .header-links a {
@@ -51,11 +55,13 @@
 
 <header>
     <h1>Aidan McLain</h1>
-    <div class="page-nav">
-        <ul class="header-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="introduction.html">Introduction</a></li>
-            <li><a href="contract.html">Contract</a></li>
-        </ul>
-    </div>
+
+    <ul class="header-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="introduction.html">Introduction</a></li>
+        <li><a href="contract.html">Contract</a></li>
+        <li>
+            <a href="/itis3135/stuff/AWESOME!%20Webpage%20for%20making%20LOADS%20of%20$$$%C2%A2%C2%A2%C2%A2%C2%A2.htm">CRAPPY</a></li>
+    </ul>
+
 </header>
