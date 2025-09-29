@@ -1,88 +1,48 @@
+:root {
+    --linkHoverColor: #686868;
+}
 * {
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: #1C1D21;
     margin: auto 0;
-}
-header, footer {
-    background-color: rgb(16, 16, 90);
-    padding: 1%;
-    margin: 0px;
-    text-align: center;
+    text-decoration: none;
 }
 
 body {
     background-color: white;
-    padding: 0px;
+    padding: 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 main {
-    margin: 0px auto;
+    margin: 0 auto;
     text-align: left;
     max-width: 800px;
     width: 90%;
-    background-color: midnightblue;
+    background-color: #DAD6D6;
     flex: 1;
+    padding: 1rem 1rem;
+    color: #1C1D21;
 }
-main ul {
-    padding:20px;
-}
-h1, h2{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold';
+
+h2, h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',serif;
     padding: 10px;
     text-align: left;
 }
 h3 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding: 10px;
     text-align: left;
-    font-size: 95%;
 }
 
-footer {
-    height: 50px;
-}
-footer div {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-}
-a {
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    padding: 0px 10px;
-}
-a:hover {
-    font-size: 110%;
-    color: gray
-}
 
-header {
-    display: flex;
-    align-items: center;
-    background-color: rgb(16, 16, 90);
-    padding: 1%;
-    margin: 0px;
-    text-align: center;
-}
-.page-nav {
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
-    list-style: none;
-    padding: 0;
-}
-.page-nav li {
-    display: inline;
-    margin: 0 10px;
-}
 .profile-picture img{
     max-width: 100%;
     border-radius: 20%;
-    margin-right: 20px;
+    margin: 20px;
+    transform: rotate(90deg);
 }
 .profile-picture {
     margin-left: 20px;
@@ -91,4 +51,18 @@ header {
     width: 200px;
     max-width: 20%;
     text-align: center;
+}
+
+a:hover {
+    color: var(--linkHoverColor);
+    transition: color 0.3s ease;
+}
+.crap-list ul {
+    padding: 0.5rem 2rem;
+}
+.crap-list p {
+    padding: 1rem;
+}
+.crap-list {
+    padding: 1rem;
 }
