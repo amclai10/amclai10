@@ -15,7 +15,7 @@
     /* Header Variables */
     --headerTextColor: var(--primary-light);
     --header-gap: 3rem;
-    --header-padding-y: 2rem;
+    --header-padding-y: 0.5rem;
     
     /* Layout Variables */
     --sep-nudge: 0.10em;
@@ -137,8 +137,10 @@ a:hover {
 header {
     color: var(--headerTextColor);
     background-color: var(--primary-dark);
-    padding: var(--header-padding-y) 0;
+    padding: var(--header-padding-y) 0 0;
     text-align: center;
+    z-index: 1000;
+    overflow: hidden;
 }
 
 header h1 {
@@ -155,15 +157,15 @@ header h1 {
     list-style: none;
     padding: 1rem;
     gap: var(--header-gap);
-    border-radius: 10px;
-    margin: 1rem auto;
+    border-radius: 10px 10px 0 0;
+    margin: auto;
     max-width: fit-content;
+
 }
 
 .header-links li {
     display: flex;
     align-items: center;
-    line-height: 1;
 }
 
 .header-links a {
@@ -263,7 +265,7 @@ header h1 {
 /* Desktop styles */
 @media (min-width: 992px) {
     main {
-        max-width: 1200px;
+        max-width: 1400px;
         margin: 0 auto;
     }
 }
