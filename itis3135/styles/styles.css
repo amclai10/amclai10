@@ -47,8 +47,7 @@ main {
     background-color: var(--primary-light);
     flex: 1;
     color: var(--primary-dark);
-    padding: 1rem;
-    overflow-x: auto;
+    padding: 3rem;
 }
 
 /* Typography */
