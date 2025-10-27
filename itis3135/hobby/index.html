@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function showPage(page) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(function (section) {
+                section.style.display = 'none';
+            });
+            const targetSection = document.querySelector('.' + page);
+            if (targetSection) {
+                targetSection.style.display = 'block';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            showPage('home');
+        });
+    </script>
+    <style>
+        :root {
+            --primary-color: #1a2634;
+            --secondary-color: #2563eb;
+            --text-color: #ffffff;
+            --hover-color: #1d4ed8;
+            --main-text-color: #000000;
+        }
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        main {
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 1rem 2rem;
+            background-color: #f5f5f5;
+            min-height: calc(100vh - 105px);
+        }
+        li {
+            padding: 0 1rem;
+        }
+        section {
+            display: none;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            padding: 1rem;
+            color: var(--text-color);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:visited {
+            color: inherit;
+        }
+        nav {}
+        nav ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            list-style: none;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--text-color);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            background-color: var(--secondary-color);
+            transition: background-color 0.3s ease;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 1rem auto;
+        }
+        .nav-link:hover {
+            background-color: var(--hover-color);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 400px;
+            margin: 2rem auto;
+        }
+
+        form label {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        form input {
+            padding: 0.5rem;
+            border: 2px solid var(--secondary-color);
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        form button {
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            border: none;
+            padding: 0.75rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: var(--hover-color);
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>3D Printing Hobby Page</h1>
+    <nav>
+        <ul>
+            <li>
+                <a href="#" class="nav-link" onclick="showPage('home')">Home</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link" onclick="showPage('when')">Schedule</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link" onclick="showPage('about')">About</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link" onclick="showPage('where')">Locations</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link" onclick="showPage('how')">How</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link" onclick="showPage('why')">Why</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link" onclick="showPage('aiPrompts')">AI Prompts</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="about">
+        <h2>About</h2>
+        <p>3D printing has existed since 1984 when it was invented by Charles Hull. The original printer made by Hull used stereolithography (SLA) instead of FDM like most modern printers. SLA uses lasers to cure liquid resin into layers.</p>
+        <figure>
+            <img src="images/chuck-hull.jpg" alt="Chuck Hull next to a 3D printer">
+            <figcaption><em>Chuck Hull next to a 3D printer<br>Source: <a href="https://www.spolearninglab.com/curriculum/workshops/heschel_hs.html" target="_blank">https://www.spolearninglab.com/curriculum/workshops/heschel_hs.html</a></em></figcaption>
+        </figure>
+        <p>The Creality Ender 3 is widely considered the first widely available and affordable 3D printer. It was released in 2018 and priced under $200 USD. Despite its popularity and wide use, it suffered from serious quality control issues and led many to endlessly alter the machine in the hope of making it more reliable.</p>
+        <p>The unreliable nature of the Ender 3 paved the way for a new reliable entry-level printer to hit the market. This came with the BambuLab X1 Carbon, a device that could work out of the box with little user customization being necessary.</p>
+    </section>
+    <section class="home">
+        <h2>Home</h2>
+        <div>
+            <p>Welcome to my 3D Printing hobby website. Here you will learn about the basics of 3D printing as a hobby.</p>
+            <figure>
+                <img src="images/3d-printer.jpg" alt="Active 3D Printer">
+                <figcaption><em>MakerBot Replicator 2 in action<br>Source: <a href="https://www.flickr.com/photos/creative_tools/8080028846" target="_blank">https://www.flickr.com/photos/creative_tools/8080028846</a></em></figcaption>
+            </figure>
+            <p>3D printing itself is a technology, one that uses additive manufacturing techniques to create a product. Additive manufacturing as a process takes a material and forms the end product layer by layer.</p>
+            <p>Only in recent years has it become readily accessible to the public, with companies like Creality and BambuLab coming out with incredible entry level products. Most of these printers operate with a fused deposition modeling (FDM) process, which operates by extruding thermoplastics onto a build surface.</p>
+            <figure>
+                <img src="images/ender-3-v2-neo.jpeg" alt="Ender 3 3D Printer">
+                <figcaption><em>Ender 3 3D Printer<br>Source: <a href="https://www.designtec.cl/producto/impresora-3d-creality-ender-3-v2-neo/" target="_blank">https://www.designtec.cl/producto/impresora-3d-creality-ender-3-v2-neo/</a></em></figcaption>
+            </figure>
+        </div>
+    </section>
+    <section class="when">
+        <h2>Schedule</h2>
+        <p>We meet regularly and have several upcoming meetings. You may attend as you please at any of these times.</p>
+        <table>
+            <thead>
+            <tr>
+                <th>Month</th>
+                <th>Day</th>
+                <th>Time</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>October</td>
+                <td>3rd</td>
+                <td>3:00 PM</td>
+            </tr>
+            <tr>
+                <td>November</td>
+                <td>8th</td>
+                <td>3:00 PM</td>
+            </tr>
+            <tr>
+                <td>December</td>
+                <td>12th</td>
+                <td>3:00 PM</td>
+            </tr>
+            <tr>
+                <td>January</td>
+                <td>2nd</td>
+                <td>3:00 PM</td>
+            </tr>
+            </tbody>
+        </table>
+        <p>Please RSVP if you plan on attending a meeting.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input id="name" name="name" type="text" placeholder="John Doe" required>
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="email" placeholder="johndoe@email.com" required>
+            <button type="submit">Submit</button>
+        </form>
+        <figure><img alt="Milwaukee maker space with 3D Printers and computers on a table" src="images/makerspace.jpg"><figcaption><em>>A makerspace in Milwaukee, Wisconsin <br>Source: <a href="https://www.flickr.com/photos/raster/13672289235/">https://www.flickr.com/photos/raster/13672289235/</a></em></figcaption></figure>
+
+    </section>
+    <section class="where">
+        <h2>3D Printing Locations</h2>
+        <p>The most common place to find publicly available 3D Printers is known as a <em>maker space</em>, a collaborative location where hobbyist "makers" share otherwise expensive equipment.</p>
+        <figure><img alt="Milwaukee maker space with 3D Printers and computers on a table" src="images/makerspace.jpg"><figcaption><em>A makerspace in Milwaukee, Wisconsin <br>Source: <a href="https://www.flickr.com/photos/raster/13672289235/">https://www.flickr.com/photos/raster/13672289235/</a></em></figcaption></figure>
+
+    </section>
+    <section class="how">
+        <h2>How do 3D printers work?</h2>
+        <p>3D printers work by creating an object layer by layer, a process known as additive manufacturing. This is different from the other largely used process for creating plastic objects, that being injection moulding, which forces molten plastic into a mould.</p>
+        <figure>
+            <img src="images/activeprinter.jpg" alt="An FDM 3D printer laying down plastic">
+            <figcaption><em>An FDM 3D printer laying down plastic<br>Source: <a href="https://www.flickr.com/photos/crossmediaweek/8022934119" target="_blank">https://www.flickr.com/photos/crossmediaweek/8022934119</a></em></figcaption>
+        </figure>
+        <p>There are two other forms of 3D printing, stereolithographic (SLA) and selective laser sintering (SLS) printers. SLS printers use lasers to fuse powdered thermoplastic together, layer by layer. This normally allows for the production of highly detailed and durable objects. SLA printers use lasers to cure a liquid resin, which allows for detailed but normally brittle objects.</p>
+    </section>
+    <section class="why">
+        <h2>What makes 3D printers useful?</h2>
+        <p>What makes these machines incredibly useful is their ability to rapidly produce prototypes. Unlike injection moulding, there is very little cost in making alterations to a product. This is because 3D printers do not need a specially designed mould to inject plastic into. The downside is often the time it takes per object, which becomes an issue with larger objects that can take days or even weeks to finish.</p>
+        <figure>
+            <img src="images/injectionmoulding.png" alt="Industrial injection moulding machines">
+            <figcaption><em>Industrial injection moulding machines <br>Source: <a href="https://technofaq.org/posts/2018/01/injection-molding-now-a-reality-for-both-big-and-small-production/">https://technofaq.org/posts/2018/01/injection-molding-now-a-reality-for-both-big-and-small-production/</a></em></figcaption>
+
+        </figure>
+        <p>The comparatively small size of 3D printers also makes them an ideal device, since they are almost always order of magnitudes smaller than their injection moulding counterparts.</p>
+    </section>
+    <section class="aiPrompts">
+        <h2>AI Prompts used</h2>
+        <p>These are the prompts I used when making this page.</p>
+        <ul>
+            <li>make my headers look decent and give them variables for the colors.</li>
+            <li>make my forms look better.</li>
+        </ul>
+    </section>
+</main>
+<footer>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <p>Designed by <a href="/itis3135/aidanmc.com">Aidan McLain LLC</a></p>
+</footer>
+
+</body>
+</html>

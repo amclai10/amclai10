@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" id="2a9e3310-a6dc-4f70-bb17-425f133211d1" customName="UNCC Webspace" nameFormat="CUSTOM" useOpenSSHConfig="true">
+        <option name="customName" value="UNCC Webspace" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>
