@@ -7,6 +7,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+function deleteCourse(button) {
+    button.parentElement.remove();
+}
+
 function addCourse() {
     const courseTemplate = `
         <div class="course">
@@ -18,7 +22,7 @@ function addCourse() {
 
             <label for="courseDescription">Course Description:</label>
             <input type="text" id="courseDescription" name="courseDescription" placeholder="Enter course description" required>
-            <button type="button" onclick="this.parentElement.remove()">Remove Course</button>
+            <button type="button" onclick="deleteCourse(this)">Remove Course</button>
         </div>
     `;
     const courseContainer = document.createElement('div');
