@@ -4,19 +4,19 @@
     --primary-dark: #1C1D21;
     --primary-light: #DAD6D6;
     --secondary-dark: #2A2B30;
-    --linkHoverColor: #686868;
-    
+    --linkHoverColor: #939393;
+
     /* Footer Variables */
     --footer-text-color: var(--primary-light);
     --footer-hover-color: var(--linkHoverColor);
     --footer-gap: 1rem;
     --footer-padding-y: 2rem;
-    
+
     /* Header Variables */
     --headerTextColor: var(--primary-light);
     --header-gap: 3rem;
     --header-padding-y: 0.5rem;
-    
+
     /* Layout Variables */
     --sep-nudge: 0.10em;
 }
@@ -54,7 +54,13 @@ main {
 h2, h3 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
+h2 {
+    margin-bottom: 1rem;
+}
+.quote-section {
+    margin: 1rem auto;
+    padding: 1rem;
+}
 /* Table container for horizontal scrolling */
 .table-container {
     width: 100%;
