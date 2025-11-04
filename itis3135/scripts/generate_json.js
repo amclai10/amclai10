@@ -34,8 +34,3 @@ function generate() {
         }
     }
 }
-
-function deleteCourse(button) {
-    const courseDiv = button.parentElement;
-    courseDiv.remove();
-}

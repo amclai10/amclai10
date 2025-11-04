@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
 function deleteCourse(button) {
     button.parentElement.remove();
 }
@@ -35,7 +36,6 @@ function addCourse() {
 function submit() {
     const form = document.querySelector("form"); // Missing form variable declaration
 
-    // Get all form values
     const firstName = form.elements["firstName"].value;
     const middleName = form.elements["middleName"].value;
     const lastName = form.elements["lastName"].value;
@@ -55,7 +55,6 @@ function submit() {
     const quote = form.elements["quote"].value;
     const quoteAuthor = form.elements["quoteAuthor"].value;
 
-    // Get courses
     const courses = Array.from(document.querySelectorAll(".course")).map(course => ({
         number: course.querySelector("[name='courseNumber']").value,
         name: course.querySelector("[name='courseName']").value,

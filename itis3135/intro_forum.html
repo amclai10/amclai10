@@ -13,7 +13,7 @@
 
     <script src="scripts/introduction.js"></script>
     <script src="scripts/generate_json.js"></script>
-
+    <script src="scripts/generateHTML.js"></script>
     <style>
         form {
             max-width: 800px;
@@ -259,12 +259,13 @@
             <button type="reset" >Reset</Button>
             <button type="button" onclick="clearFields()">Clear</button>
             <button type="button" onclick="generate()">Generate JSON</button>
+            <button type="button" onclick="generateHTML()">Generate HTML</button>
+
         </div>
     </form>
 </main>
 <footer> <!-- this is the footer, do not edit.-->
     <div data-include="components/footer.html"></div>
-
 </footer>
 <script>
     document.getElementById("validation_link_html"). setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
