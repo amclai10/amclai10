@@ -152,9 +152,19 @@ header h1 {
     color: var(--headerTextColor);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', serif;
 }
-
-.header-links {
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 0 0;
     background-color: var(--secondary-dark);
+    max-width: fit-content;
+    margin: auto;
+
+
+}
+.header-links {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -162,8 +172,6 @@ header h1 {
     list-style: none;
     padding: 1rem;
     gap: var(--header-gap);
-    border-radius: 10px 10px 0 0;
-    margin: auto;
     max-width: fit-content;
 
 }
