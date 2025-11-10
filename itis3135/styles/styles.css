@@ -51,11 +51,12 @@ main {
 }
 
 /* Typography */
-h2, h3 {
+h3 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 h2 {
     margin-bottom: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .quote-section {
     margin: 1rem auto;
