@@ -148,7 +148,7 @@ header {
     overflow: hidden;
 }
 
-header h1 {
+h1 {
     color: var(--headerTextColor);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', serif;
 }
