@@ -53,6 +53,7 @@ main {
 /* Typography */
 h3 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 1rem 0;
 }
 h2 {
     margin-bottom: 1rem;
@@ -137,6 +138,11 @@ a:hover {
 
 .crap-list p {
     padding: 1rem;
+}
+
+ol {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 /* Header styles */
@@ -285,4 +291,17 @@ h1 {
 }
 ul {
     padding: 0 1rem;
+}
+section {
+    margin: 1rem auto;
+}
+#checklist li {
+    padding: 0.5rem;
+}
+#overallReview {
+    width: 100%;
+}
+#overallReview figure img {
+    margin: 0 auto;
+    width: 70vw;
 }
