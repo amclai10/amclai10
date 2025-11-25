@@ -303,5 +303,5 @@ section {
 }
 #overallReview figure img {
     margin: 0 auto;
-    width: 70vw;
+    max-width: 600px;
 }
